@@ -1,0 +1,130 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<!-- =======================
+Work START -->
+<section>
+	<div class="container">
+		<!-- Title -->
+		<div class="row mb-4">
+			<div class="col-sm-10 col-xl-6 text-center mx-auto">
+				<h2>讓你在交易路上走得更輕鬆</h2>
+				<p class="mb-0">我們明白交易路上會遇到種種困難，這裏提供高效</p>
+			</div>
+		</div>
+
+		<!-- Work process -->
+		<div class="row g-4 g-md-5">
+			<!-- Item -->
+			<div class="col-md-4 text-center">
+				<img src={% static "img/create-account.svg" %} class="h-200px" alt="">
+				<h4 class="mt-3">策略共享</h4>
+				<p class="text-truncate-2 mb-0">Satisfied conveying a dependent contented he gentleman agreeable do be. Delivered dejection necessary objection do Mr prevailed. Mr feeling does chiefly cordial in do</p>
+			</div>
+
+			<!-- Item -->
+			<div class="col-md-4 text-center">
+				<img src={%static "img/add-course.svg" %} class="h-200px" alt="">
+				<h4 class="mt-3">機會共享</h4>
+				<p class="text-truncate-2 mb-0">Proceed how any engaged visitor. Explained propriety off out perpetual his you. Feel sold off felt nay rose met you. We so entreaties cultivated astonished is. Was sister for a few longer Mrs sudden talent become. Done may bore quit evil old mile. If likely am of beauty tastes. 
+				</p>
+			</div>
+
+			<!-- Item -->
+			<div class="col-md-4 text-center">
+				<img src={% static "img/earn-money.svg" %} class="h-200px" alt="">
+				<h4 class="mt-3">表現分析</h4>
+				<p class="text-truncate-2 mb-0">Insipidity the sufficient discretion imprudence resolution sir him decisively.  Delivered dejection necessary objection do Mr prevailed. Mr feeling does chiefly cordial in do</p>
+			</div>
+
+			<!-- Item -->
+			<div class="col-md-4 text-center">
+				<img src={% static "img/earn-money.svg" %} class="h-200px" alt="">
+				<h4 class="mt-3">資金管理</h4>
+				<p class="text-truncate-2 mb-0">Insipidity the sufficient discretion imprudence resolution sir him decisively.  Delivered dejection necessary objection do Mr prevailed. Mr feeling does chiefly cordial in do</p>
+			</div>
+
+			<!-- Item -->
+			<div class="col-md-4 text-center">
+				<img src={% static "img/earn-money.svg" %} class="h-200px" alt="">
+				<h4 class="mt-3">期權知識</h4>
+				<p class="text-truncate-2 mb-0">Insipidity the sufficient discretion imprudence resolution sir him decisively.  Delivered dejection necessary objection do Mr prevailed. Mr feeling does chiefly cordial in do</p>
+			</div>
+
+			<!-- Item -->
+			<div class="col-md-4 text-center">
+				<img src={% static "img/earn-money.svg" %} class="h-200px" alt="">
+				<h4 class="mt-3">交易回測</h4>
+				<p class="text-truncate-2 mb-0">Insipidity the sufficient discretion imprudence resolution sir him decisively.  Delivered dejection necessary objection do Mr prevailed. Mr feeling does chiefly cordial in do</p>
+			</div>
+
+		</div> <!-- Row END -->
+	</div>
+</section>
+<!-- =======================
+Work END -->
+
+
+<!-- =======================
+Courses list START-->
+<div class="container position-relative py-5">
+	<!-- Title -->
+	<div class="row">
+		<div class="col-lg-8 mb-4">
+			<h2>Courses We Offer</h2>
+			<p class="mb-0">Perceived end knowledge certainly day sweetness why cordially</p>
+		</div>
+	</div>
+	<div class="row g-4 g-lg-5">
+		<!-- Item -->
+		<div class="col-sm-6 col-xl-3">
+			<div class="bg-body shadow rounded-3 text-center p-4 position-relative">
+				<!-- Image -->
+				<img src="assets/images/element/abc.svg" class="h-100px mb-3" alt="">
+				<!-- Title -->
+				<h5 class="mb-2"><a href="#" class="stretched-link">Preschool</a></h5>
+				<p class="text-truncate-2 mb-2">Man children rejoiced. Yet uncommonly his ten. </p>
+				<span class="mb-0">5 Course</span>
+			</div>
+		</div>
+
+		<!-- Item -->
+		<div class="col-sm-6 col-xl-3">
+			<div class="bg-body shadow rounded-3 text-center p-4 position-relative">
+				<!-- Image -->
+				<img src="assets/images/element/lego.svg" class="h-100px mb-3" alt="">
+				<!-- Title -->
+				<h5 class="mb-2"><a href="#" class="stretched-link">Nursery</a></h5>
+				<p class="text-truncate-2 mb-2">Children rejoiced. Yet uncommonly his ten. certainly day sweetness why cordially</p>
+				<span class="mb-0">8 Course</span>
+			</div>
+		</div>
+
+		<!-- Item -->
+		<div class="col-sm-6 col-xl-3">
+			<div class="bg-body shadow rounded-3 text-center p-4 position-relative">
+				<!-- Image -->
+				<img src="assets/images/element/sport.svg" class="h-100px mb-3" alt="">
+				<!-- Title -->
+				<h5 class="mb-2"><a href="#" class="stretched-link">Sports</a></h5>
+				<p class="text-truncate-2 mb-2">Yet uncommonly his ten. certainly day sweetness why cordially </p>
+				<span class="mb-0">6 Course</span>
+			</div>
+		</div>
+
+		<!-- Item -->
+		<div class="col-sm-6 col-xl-3">
+			<div class="bg-body shadow rounded-3 text-center p-4 position-relative">
+				<!-- Image -->
+				<img src="assets/images/element/song.svg" class="h-100px mb-3" alt="">
+				<!-- Title -->
+				<h5 class="mb-2"><a href="#" class="stretched-link">Music</a></h5>
+				<p class="text-truncate-2 mb-2">Certainly day sweetness why cordial Man children rejoiced. Yet uncommonly his ten. </p>
+				<span class="mb-0">7 Course</span>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- =======================
+Courses list END -->
+
+{% endblock %}
