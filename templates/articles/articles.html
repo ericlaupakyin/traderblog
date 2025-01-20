@@ -32,7 +32,7 @@
                     </figure>
                     
                     <!-- Title -->
-                    <h1>Blog Grid</h1>
+                    <h>交易文章</h>
                     <!-- Breadcrumb -->
                     <div class="d-flex justify-content-center position-relative">
                         <nav aria-label="breadcrumb">
@@ -71,8 +71,8 @@
                         <!-- Card body -->
                         <div class="card-body">
                             <!-- Title -->
-                            <h5 class="card-title"><a href={% url "article" %}>Student Loan Survey: Many Owe $50K-plus</a></h5>
-                            <p class="text-truncate-2">Affronting imprudence do he he everything. Offered chiefly farther of my no colonel shyness. Such on help ye some door if in. Laughter proposal laughing any son law consider. Needed except up piqued an.</p>
+                            <h5 class="card-title"><a href={% url "article" content.id %}>{{ content.title }}</a></h5>
+                            <p class="text-truncate-2">A{{ content.body }}</p>
                             <!-- Info -->
                             <div class="d-flex justify-content-between">
                                 <h6 class="mb-0"><a href="#">Frances Guerrero</a></h6>

@@ -15,7 +15,19 @@ def index(request):
     return render(request, 'blogs/index.html', context)
 
 def about(request):
-    return render(request,'blogs/about.html')
+    categorys = Category.objects.order_by('-priority').filter(is_published=True)
+    contents = Content.objects.all()
+    context = {
+        'categorys' : categorys,
+        'contents' : contents
+    }
+    return render(request,'blogs/about.html', context)
 
 def service(request):
-    return render(request,'blogs/service.html')
+    categorys = Category.objects.order_by('-priority').filter(is_published=True)
+    contents = Content.objects.all()
+    context = {
+        'categorys' : categorys,
+        'contents' : contents
+    }
+    return render(request,'blogs/service.html', context)

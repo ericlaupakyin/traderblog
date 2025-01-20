@@ -30,10 +30,9 @@
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle active" href="#" id="demoMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">精選文章</a>
 						<ul class="dropdown-menu" aria-labelledby="demoMenu">
-
-							<li> <a class="dropdown-item active" href={% url "articles" %}>交易策略</a></li>
-							<li> <a class="dropdown-item" href={% url "articles" %}>價格行為</a></li>
-							<li> <a class="dropdown-item" href="index-3.html">技術指標</a></li>
+							{% for category in categorys %}
+							<li> <a class="dropdown-item" href={% url 'articles' category.id %}>{{ category.category }}</a></li>
+							{% endfor %}
 						</ul>
 					</li>
 

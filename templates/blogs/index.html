@@ -359,12 +359,24 @@ Popular course START -->
 		</ul>
 		<!-- Tabs END -->
 
+		<!-- Tabs START -->
+		<ul class="nav nav-pills nav-pills-bg-soft justify-content-sm-center mb-4 px-3" id="course-pills-tab" role="tablist">
+			<!-- Tab item -->
+			{% for category in categorys %}
+			<li class="nav-item me-2 me-sm-5">
+				<button class="nav-link mb-2 mb-md-0" id="course-pills-tab-1" data-bs-toggle="pill" data-bs-target="#course-pills-tabs-1" type="button" role="tab" aria-controls="course-pills-tabs-1" aria-selected="false"><a href={% url 'articles' category.id %}>{{ category.category }}</button>
+			</li>
+
+			{% endfor %}
+		</ul>
+		<!-- Tabs END -->
+
 		<!-- Tabs content START -->
 		
         <!-- 打橫排 -->
 		<div class="container">
 			<div class="row">
-			{% for content in contents %}
+			    	{% for content in contents %}
 					<!-- Card item START -->
 					<div class="col-sm-6 col-lg-4 col-xl-3">
 						<div class="card shadow h-100">
@@ -378,8 +390,8 @@ Popular course START -->
 									<a href="#" class="h6 mb-0"><i class="far fa-heart"></i></a>
 								</div>
 								<!-- Title -->
-{% comment %} {% url "content" content.id %} {% endcomment %}
-								<h5 class="card-title fw-normal"><a href="">{{ content.title }}</a></h5>
+                    			<h5 class="card-title fw-normal"><a href={% url "article" content.id %}>{{ content.title }}</a></h5>
+								{% comment %} <h5 class="card-title fw-normal"><a href="">{{ content.title }}</a></h5> {% endcomment %}
 								<p class="mb-2 text-truncate-2">{{ content.body }}</p>
 								<!-- Rating star -->
 								<ul class="list-inline mb-0">
